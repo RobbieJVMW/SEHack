@@ -31,6 +31,7 @@ if (!$conn) {
 }
 
 
+echo "<h1>Remote Sensor Home Page</h1>";
 
 switch ($input_function) {
 	
@@ -44,8 +45,13 @@ switch ($input_function) {
 	
 }
 
-?>
-<h1>Remote Sensor Home Page</h1>
+
+
+
+
+	function homePage($type,$value,$conn)
+	{
+        ?>
 <form action=? method=get>
     <input type=hidden name=function value=viewReadings>
     Number of readings: <input type=text name=value size=3 value="1"> <BR>
@@ -53,26 +59,10 @@ switch ($input_function) {
     <input type=submit value=Get>
     <BR>
     </form>
-      <?php
-
-
-
-	function addReading($type,$value,$conn)
-	{
-		if(!$type or !$value) { 			    $response="\t<status>Error</status>\n\t<message>invalid input</message>";}
-		else{
-			$sql = "INSERT INTO `weather` (type,value) VALUES ('$type','$value')";
-			if (mysqli_query($conn, $sql)) {
-			    $response="\t<status>Success</status>";
-			} else {
-			    $response="\t<status>Error</status>\n\t<message>DB insert failed</message>";
-			}	
-		}
-			
-		return $response; 
-	}
+        <?php
+    }
 	
-	function getReading($type,$value,$conn)
+	function viewReading($type,$value,$conn)
 	{
 
 		$sql = "SELECT datetime, type, value FROM weather WHERE `type`='$type' ORDER BY `id` DESC LIMIT 0,$value";
