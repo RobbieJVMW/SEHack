@@ -64,15 +64,30 @@ switch ($input_function) {
 	
 	function viewReading($type,$value,$conn)
 	{
-
+        echo "<TABLE width=500>
+        <TR>
+        <TD><B>Date/Time</B></TD>
+        <TD><B>Type</B></TD>
+        <TD><B>Value</B></TD>
+        </TR>
+        ";
+        
 		$sql = "SELECT datetime, type, value FROM weather WHERE `type`='$type' ORDER BY `id` DESC LIMIT 0,$value";
 		$result = mysqli_query($conn, $sql);
 		if (mysqli_num_rows($result) > 0) {
 		    while($row = mysqli_fetch_assoc($result)) {
-	           $response.="\t<reading>\n\t\t<date>" . $row["datetime"]. "</date>\n\t\t<type>" . $row["type"]. "</type>\n\t\t<value>" . $row["value"]. "</value>\n\t</reading>\n";
+                
+                echo "
+                        <TR>
+        <TD>$row[datetime]</TD>
+        <TD>$row[type]</TD>
+        <TD>$row[value]</TD>
+
+        </TR>"; 
+	  
 	       }
 	   }
-	   else {$response="<status>Error</status>\n\t<message>no data</message>"; }
+	   else {echo "<TR><TD>Null</TD></TR>"; }
 	   
 	   return $response;
 	}
