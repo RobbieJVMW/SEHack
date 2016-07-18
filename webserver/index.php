@@ -95,7 +95,7 @@ switch ($input_function) {
     
  
 <script src="Chart.js"></script>
-<canvas id="myChart" width="200" height="200"></canvas>
+<canvas id="myChart" width="400" height="400" style="width:400px; height:400px;"></canvas>
 
 <script>
     
