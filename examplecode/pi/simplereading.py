@@ -19,7 +19,7 @@ print ("Reading: " + str(reading))
 print ("Type: " + str(type))
 
 
-defurl="http://52.50.60.213/api.php?function=addReading&type=" + type + "&value=" + str(reading)
+defurl="http://52.16.112.87/api.php?function=addReading&type=" + type + "&value=" + str(reading)
 
 output=url.urlopen(defurl).read()
 print(output)

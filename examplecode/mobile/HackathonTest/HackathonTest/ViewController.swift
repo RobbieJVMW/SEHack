@@ -39,7 +39,7 @@ class ViewController: UIViewController, NSXMLParserDelegate {
         
         temperatureReadings.removeAll()
         
-        let url:String="http://52.50.60.213/api.php?function=getReading&type=temperature&value=5"
+        let url:String="http://52.16.112.87/api.php?function=getReading&type=temperature&value=5"
         let urlToSend: NSURL = NSURL(string: url)!
         // Parse the XML
         parser = NSXMLParser(contentsOfURL: urlToSend)!
