@@ -45,7 +45,6 @@ class ViewController: UIViewController, NSXMLParserDelegate {
         parser = NSXMLParser(contentsOfURL: urlToSend)!
         parser.delegate = self
         
-        let success:Bool = parser.parse()
         
         if success {
             print("parse success!")
