@@ -46,14 +46,7 @@ class ViewController: UIViewController, NSXMLParserDelegate {
         parser.delegate = self
         
         
-        if success {
-            print("parse success!")
-            reading.text="Readings retrieved: \n"
 
-            
-        } else {
-            print("parse failure!")
-        }
         
         for (datevalue, tempvalue) in temperatureReadings {
             print("The reading was \(datevalue) = \(tempvalue)")
