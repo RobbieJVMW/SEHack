@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		33869DF91D421F3000342F9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33869DF81D421F3000342F9C /* Assets.xcassets */; };
 		33869DFC1D421F3000342F9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33869DFA1D421F3000342F9C /* LaunchScreen.storyboard */; };
 		33869E071D421F3100342F9C /* FunkyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33869E061D421F3100342F9C /* FunkyAppTests.swift */; };
+		DC693B541D9F1C5A006CDC5D /* VMware_logo_gry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC693B531D9F1C5A006CDC5D /* VMware_logo_gry.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		33869E021D421F3000342F9C /* FunkyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunkyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33869E061D421F3100342F9C /* FunkyAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunkyAppTests.swift; sourceTree = "<group>"; };
 		33869E081D421F3100342F9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC693B531D9F1C5A006CDC5D /* VMware_logo_gry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VMware_logo_gry.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				33869DF01D421F3000342F9C /* FunkyApp */,
 				33869E051D421F3100342F9C /* FunkyAppTests */,
 				33869DEF1D421F3000342F9C /* Products */,
+				DC693B521D9F1C3B006CDC5D /* Media */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +97,15 @@
 				33869E081D421F3100342F9C /* Info.plist */,
 			);
 			path = FunkyAppTests;
+			sourceTree = "<group>";
+		};
+		DC693B521D9F1C3B006CDC5D /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				DC693B531D9F1C5A006CDC5D /* VMware_logo_gry.jpg */,
+			);
+			name = Media;
+			path = FunkyApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +158,6 @@
 				TargetAttributes = {
 					33869DED1D421F3000342F9C = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = Z7W6A4GTV8;
 						LastSwiftMigration = 0800;
 					};
 					33869E011D421F3000342F9C = {
@@ -157,7 +168,7 @@
 				};
 			};
 			buildConfigurationList = 33869DE91D421F3000342F9C /* Build configuration list for PBXProject "FunkyApp" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -181,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33869DFC1D421F3000342F9C /* LaunchScreen.storyboard in Resources */,
+				DC693B541D9F1C5A006CDC5D /* VMware_logo_gry.jpg in Resources */,
 				33869DF91D421F3000342F9C /* Assets.xcassets in Resources */,
 				33869DF71D421F3000342F9C /* Main.storyboard in Resources */,
 			);
@@ -339,6 +351,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = RQ73DXU2DG;
 				INFOPLIST_FILE = FunkyApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vmware.com.FunkyApp;
@@ -354,6 +367,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = RQ73DXU2DG;
 				INFOPLIST_FILE = FunkyApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vmware.com.FunkyApp;
