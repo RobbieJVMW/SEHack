@@ -1,0 +1,33 @@
+#!/usr/bin/python
+
+import httplib
+import RPi.GPIO as GPIO
+import time
+
+GPIO.setwarnings(False)
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(11, GPIO.OUT)
+
+
+# Setup connection
+conn = httplib.HTTPConnection("52.16.112.87:85")
+conn.request("GET", "/api.php?function=ledGetReading")
+led = conn.getresponse()
+#print led.read()
+
+# TODO: Add failure capturing
+# if resp.status <> 200; catch exp; exit 1
+
+
+# Set led
+while 1:
+	conn = httplib.HTTPConnection("52.16.112.87:85")
+	conn.request("GET", "/api.php?function=ledGetReading")
+	led = conn.getresponse()
+	led_status = led.read()
+
+	if "off" in led_status:
+		GPIO.output(11, GPIO.LOW)
+	else:
+  		GPIO.output(11, GPIO.HIGH)
+	time.sleep(1)
