@@ -1,0 +1,106 @@
+<?php
+header('Content-Type: text/xml');
+
+// input values
+if($argv[1])
+{
+	$input_function=$argv[1];
+	$input_state=$argv[2];
+	//$input_type=$argv[3];
+
+}
+else
+{
+$input_function=$_GET["function"];
+$input_state=$_GET["state"];
+}
+
+$team = "b";
+
+//db connections
+$servername = $_SERVER["dbserver"];
+$username = $_SERVER["dbuser"];
+$password = $_SERVER["dbpass"];
+$dbname=$_SERVER["dbname"];
+
+if(!$servername)
+{
+//db connections
+$servername = "temperature.clmv89mfjqjm.eu-west-1.rds.amazonaws.com:3306 ";
+$username = "hackathon";
+$password = "hackathon123";
+$dbname="hackathon";
+
+}
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+if (!$conn) {
+    $response="ERROR - no connection to $servername with $username / $dbname";
+	echo "$response"; exit;
+}
+
+
+
+switch ($input_function) {
+
+	case "ledAddReading":
+	$response=ledAddReading($input_state,$conn);
+	break;
+
+	case "ledGetReading":
+	$response=ledGetReading($conn);
+	break;
+
+
+	default:
+	$response="Error";
+
+}
+
+?>
+<?xml version="1.0" encoding="utf-8"?>
+<hackathon>
+<?php
+echo "$response";
+?>
+
+</hackathon>
+
+<?php
+
+
+///////////////////
+	function ledAddReading($state,$conn)
+	{
+		if(!$state) { 			    $response="\t<status>Error</status>\n\t<message>invalid input</message>";}
+		else{
+			$sql = "UPDATE `led` SET `state` =  '$state' WHERE `team` = 'b'";
+
+			if (mysqli_query($conn, $sql)) {
+			    $response="\t<status>Success</status> $sql";
+			} else {
+			    $response="\t<status>Error</status>\n\t<message>DB insert failed</message> $sql";
+			}
+		}
+
+		return $response;
+	}
+
+
+	function ledGetReading($conn)
+	{
+
+		$sql = "SELECT state FROM led WHERE team LIKE 'b'";
+		$result = mysqli_query($conn, $sql);
+
+		if (mysqli_num_rows($result) > 0) {
+				while($row = mysqli_fetch_assoc($result)) {
+						 $response.="\t<state>\n\t\t" . $row["state"] . "</state>\n";
+				 }
+		 }
+		 else {$response="<status>Error</status>\n\t<message>no data</message>"; }
+
+		 return $response;
+	}
+?>
