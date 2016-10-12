@@ -14,6 +14,23 @@
 		33869DFC1D421F3000342F9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33869DFA1D421F3000342F9C /* LaunchScreen.storyboard */; };
 		33869E071D421F3100342F9C /* FunkyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33869E061D421F3100342F9C /* FunkyAppTests.swift */; };
 		DC693B541D9F1C5A006CDC5D /* VMware_logo_gry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC693B531D9F1C5A006CDC5D /* VMware_logo_gry.jpg */; };
+		DCA765AC1DAE37D600C8A25D /* Icon-App-20x20@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCA7659B1DAE37D600C8A25D /* Icon-App-20x20@1x.png */; };
+		DCA765AD1DAE37D600C8A25D /* Icon-App-20x20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCA7659C1DAE37D600C8A25D /* Icon-App-20x20@2x.png */; };
+		DCA765AE1DAE37D600C8A25D /* Icon-App-20x20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCA7659D1DAE37D600C8A25D /* Icon-App-20x20@3x.png */; };
+		DCA765AF1DAE37D600C8A25D /* Icon-App-29x29@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCA7659E1DAE37D600C8A25D /* Icon-App-29x29@1x.png */; };
+		DCA765B01DAE37D600C8A25D /* Icon-App-29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCA7659F1DAE37D600C8A25D /* Icon-App-29x29@2x.png */; };
+		DCA765B11DAE37D600C8A25D /* Icon-App-29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCA765A01DAE37D600C8A25D /* Icon-App-29x29@3x.png */; };
+		DCA765B21DAE37D600C8A25D /* Icon-App-40x40@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCA765A11DAE37D600C8A25D /* Icon-App-40x40@1x.png */; };
+		DCA765B31DAE37D600C8A25D /* Icon-App-40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCA765A21DAE37D600C8A25D /* Icon-App-40x40@2x.png */; };
+		DCA765B41DAE37D600C8A25D /* Icon-App-40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCA765A31DAE37D600C8A25D /* Icon-App-40x40@3x.png */; };
+		DCA765B51DAE37D600C8A25D /* Icon-App-57x57@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCA765A41DAE37D600C8A25D /* Icon-App-57x57@1x.png */; };
+		DCA765B61DAE37D600C8A25D /* Icon-App-60x60@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCA765A51DAE37D600C8A25D /* Icon-App-60x60@1x.png */; };
+		DCA765B71DAE37D600C8A25D /* Icon-App-60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCA765A61DAE37D600C8A25D /* Icon-App-60x60@2x.png */; };
+		DCA765B81DAE37D600C8A25D /* Icon-App-60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCA765A71DAE37D600C8A25D /* Icon-App-60x60@3x.png */; };
+		DCA765B91DAE37D600C8A25D /* Icon-App-76x76@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCA765A81DAE37D600C8A25D /* Icon-App-76x76@1x.png */; };
+		DCA765BA1DAE37D600C8A25D /* Icon-App-76x76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCA765A91DAE37D600C8A25D /* Icon-App-76x76@2x.png */; };
+		DCA765BB1DAE37D600C8A25D /* Icon-App-76x76@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCA765AA1DAE37D600C8A25D /* Icon-App-76x76@3x.png */; };
+		DCA765BC1DAE37D600C8A25D /* Icon-App-83.5x83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCA765AB1DAE37D600C8A25D /* Icon-App-83.5x83.5@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +55,23 @@
 		33869E061D421F3100342F9C /* FunkyAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunkyAppTests.swift; sourceTree = "<group>"; };
 		33869E081D421F3100342F9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC693B531D9F1C5A006CDC5D /* VMware_logo_gry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VMware_logo_gry.jpg; sourceTree = "<group>"; };
+		DCA7659B1DAE37D600C8A25D /* Icon-App-20x20@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@1x.png"; sourceTree = "<group>"; };
+		DCA7659C1DAE37D600C8A25D /* Icon-App-20x20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@2x.png"; sourceTree = "<group>"; };
+		DCA7659D1DAE37D600C8A25D /* Icon-App-20x20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@3x.png"; sourceTree = "<group>"; };
+		DCA7659E1DAE37D600C8A25D /* Icon-App-29x29@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@1x.png"; sourceTree = "<group>"; };
+		DCA7659F1DAE37D600C8A25D /* Icon-App-29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@2x.png"; sourceTree = "<group>"; };
+		DCA765A01DAE37D600C8A25D /* Icon-App-29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@3x.png"; sourceTree = "<group>"; };
+		DCA765A11DAE37D600C8A25D /* Icon-App-40x40@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@1x.png"; sourceTree = "<group>"; };
+		DCA765A21DAE37D600C8A25D /* Icon-App-40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@2x.png"; sourceTree = "<group>"; };
+		DCA765A31DAE37D600C8A25D /* Icon-App-40x40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@3x.png"; sourceTree = "<group>"; };
+		DCA765A41DAE37D600C8A25D /* Icon-App-57x57@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-57x57@1x.png"; sourceTree = "<group>"; };
+		DCA765A51DAE37D600C8A25D /* Icon-App-60x60@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@1x.png"; sourceTree = "<group>"; };
+		DCA765A61DAE37D600C8A25D /* Icon-App-60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@2x.png"; sourceTree = "<group>"; };
+		DCA765A71DAE37D600C8A25D /* Icon-App-60x60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@3x.png"; sourceTree = "<group>"; };
+		DCA765A81DAE37D600C8A25D /* Icon-App-76x76@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@1x.png"; sourceTree = "<group>"; };
+		DCA765A91DAE37D600C8A25D /* Icon-App-76x76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@2x.png"; sourceTree = "<group>"; };
+		DCA765AA1DAE37D600C8A25D /* Icon-App-76x76@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@3x.png"; sourceTree = "<group>"; };
+		DCA765AB1DAE37D600C8A25D /* Icon-App-83.5x83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-83.5x83.5@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +136,35 @@
 		DC693B521D9F1C3B006CDC5D /* Media */ = {
 			isa = PBXGroup;
 			children = (
+				DCA7659A1DAE36ED00C8A25D /* Icons */,
 				DC693B531D9F1C5A006CDC5D /* VMware_logo_gry.jpg */,
 			);
 			name = Media;
 			path = FunkyApp;
+			sourceTree = "<group>";
+		};
+		DCA7659A1DAE36ED00C8A25D /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				DCA7659B1DAE37D600C8A25D /* Icon-App-20x20@1x.png */,
+				DCA7659C1DAE37D600C8A25D /* Icon-App-20x20@2x.png */,
+				DCA7659D1DAE37D600C8A25D /* Icon-App-20x20@3x.png */,
+				DCA7659E1DAE37D600C8A25D /* Icon-App-29x29@1x.png */,
+				DCA7659F1DAE37D600C8A25D /* Icon-App-29x29@2x.png */,
+				DCA765A01DAE37D600C8A25D /* Icon-App-29x29@3x.png */,
+				DCA765A11DAE37D600C8A25D /* Icon-App-40x40@1x.png */,
+				DCA765A21DAE37D600C8A25D /* Icon-App-40x40@2x.png */,
+				DCA765A31DAE37D600C8A25D /* Icon-App-40x40@3x.png */,
+				DCA765A41DAE37D600C8A25D /* Icon-App-57x57@1x.png */,
+				DCA765A51DAE37D600C8A25D /* Icon-App-60x60@1x.png */,
+				DCA765A61DAE37D600C8A25D /* Icon-App-60x60@2x.png */,
+				DCA765A71DAE37D600C8A25D /* Icon-App-60x60@3x.png */,
+				DCA765A81DAE37D600C8A25D /* Icon-App-76x76@1x.png */,
+				DCA765A91DAE37D600C8A25D /* Icon-App-76x76@2x.png */,
+				DCA765AA1DAE37D600C8A25D /* Icon-App-76x76@3x.png */,
+				DCA765AB1DAE37D600C8A25D /* Icon-App-83.5x83.5@2x.png */,
+			);
+			name = Icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,9 +251,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				33869DFC1D421F3000342F9C /* LaunchScreen.storyboard in Resources */,
+				DCA765BC1DAE37D600C8A25D /* Icon-App-83.5x83.5@2x.png in Resources */,
 				DC693B541D9F1C5A006CDC5D /* VMware_logo_gry.jpg in Resources */,
+				DCA765B41DAE37D600C8A25D /* Icon-App-40x40@3x.png in Resources */,
+				DCA765AE1DAE37D600C8A25D /* Icon-App-20x20@3x.png in Resources */,
+				DCA765AF1DAE37D600C8A25D /* Icon-App-29x29@1x.png in Resources */,
+				DCA765AD1DAE37D600C8A25D /* Icon-App-20x20@2x.png in Resources */,
+				DCA765B61DAE37D600C8A25D /* Icon-App-60x60@1x.png in Resources */,
+				DCA765B21DAE37D600C8A25D /* Icon-App-40x40@1x.png in Resources */,
+				DCA765B31DAE37D600C8A25D /* Icon-App-40x40@2x.png in Resources */,
+				DCA765B81DAE37D600C8A25D /* Icon-App-60x60@3x.png in Resources */,
+				DCA765B11DAE37D600C8A25D /* Icon-App-29x29@3x.png in Resources */,
+				DCA765B91DAE37D600C8A25D /* Icon-App-76x76@1x.png in Resources */,
+				DCA765BA1DAE37D600C8A25D /* Icon-App-76x76@2x.png in Resources */,
+				DCA765B71DAE37D600C8A25D /* Icon-App-60x60@2x.png in Resources */,
 				33869DF91D421F3000342F9C /* Assets.xcassets in Resources */,
+				DCA765AC1DAE37D600C8A25D /* Icon-App-20x20@1x.png in Resources */,
 				33869DF71D421F3000342F9C /* Main.storyboard in Resources */,
+				DCA765BB1DAE37D600C8A25D /* Icon-App-76x76@3x.png in Resources */,
+				DCA765B01DAE37D600C8A25D /* Icon-App-29x29@2x.png in Resources */,
+				DCA765B51DAE37D600C8A25D /* Icon-App-57x57@1x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
