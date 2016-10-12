@@ -52,16 +52,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HEH-YW-VSw"/>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VMware_logo_gry.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dbA-dH-ULB">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VMware_logo_gry.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dbA-dH-ULB">
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
                                 </accessibility>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="dbA-dH-ULB" secondAttribute="height" multiplier="15:8" id="463-S2-5SB"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="V6Z-Ri-nGZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="67" id="5hh-Q5-QXE"/>
                             <constraint firstItem="HEH-YW-VSw" firstAttribute="top" secondItem="V6Z-Ri-nGZ" secondAttribute="bottom" constant="26" id="E9m-Zb-xhh"/>
