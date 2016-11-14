@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,11 +20,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="V6Z-Ri-nGZ">
-                                <frame key="frameInset" minX="132" minY="87" width="80" height="21"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="V6Z-Ri-nGZ">
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Pick one..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWb-s6-GQZ">
-                                        <frame key="frameInset" width="80" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick one..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWb-s6-GQZ">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="EWx-n3-dgN"/>
                                             <constraint firstAttribute="height" constant="21" id="LbK-pM-WKx"/>
@@ -34,18 +34,16 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="sWb-s6-GQZ" firstAttribute="centerX" secondItem="V6Z-Ri-nGZ" secondAttribute="centerX" id="DRg-a5-Dyv"/>
+                                    <constraint firstItem="sWb-s6-GQZ" firstAttribute="centerX" secondItem="V6Z-Ri-nGZ" secondAttribute="centerX" id="Edd-Iv-RFB"/>
                                 </constraints>
                             </stackView>
-                            <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qe-GD-ER7">
-                                <frame key="frameInset" minX="161" minY="311" width="51" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qe-GD-ER7">
                                 <state key="normal" title="Update"/>
                                 <connections>
                                     <action selector="dostuff:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lsl-qR-v9w"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cgl-yZ-cd2">
-                                <frame key="frameInset" minX="161" minY="241" width="140" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cgl-yZ-cd2">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="EDd-sr-U92"/>
                                 </constraints>
@@ -53,18 +51,36 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HEH-YW-VSw">
-                                <frame key="frameInset" minX="54" minY="134" width="265" height="79"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HEH-YW-VSw"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VMware_logo_gry.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dbA-dH-ULB">
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="79" id="Nof-d9-cUb"/>
-                                    <constraint firstAttribute="width" constant="265" id="upy-JF-39h"/>
+                                    <constraint firstAttribute="width" secondItem="dbA-dH-ULB" secondAttribute="height" multiplier="15:8" id="463-S2-5SB"/>
                                 </constraints>
-                            </pickerView>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="V6Z-Ri-nGZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="67" id="5hh-Q5-QXE"/>
+                            <constraint firstItem="HEH-YW-VSw" firstAttribute="top" secondItem="V6Z-Ri-nGZ" secondAttribute="bottom" constant="26" id="E9m-Zb-xhh"/>
+                            <constraint firstItem="sWb-s6-GQZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="67" id="FFX-7N-Ory"/>
+                            <constraint firstItem="dbA-dH-ULB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="52" id="IKR-rR-Qhi"/>
+                            <constraint firstItem="dbA-dH-ULB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LXM-tJ-Gx4"/>
+                            <constraint firstItem="Cgl-yZ-cd2" firstAttribute="leading" secondItem="2qe-GD-ER7" secondAttribute="leading" id="VES-CB-JwC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dbA-dH-ULB" secondAttribute="bottom" constant="20" id="VZh-Z0-jPD"/>
+                            <constraint firstItem="Cgl-yZ-cd2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wa5-7J-6WZ"/>
                             <constraint firstItem="HEH-YW-VSw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aSh-X8-NDf"/>
+                            <constraint firstItem="Cgl-yZ-cd2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bYr-AC-RvC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dbA-dH-ULB" secondAttribute="trailing" constant="51" id="cwW-gH-Sc9"/>
+                            <constraint firstItem="HEH-YW-VSw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ddq-iF-TiY"/>
+                            <constraint firstItem="Cgl-yZ-cd2" firstAttribute="top" secondItem="HEH-YW-VSw" secondAttribute="bottom" constant="28" id="oiO-m1-kTe"/>
+                            <constraint firstItem="2qe-GD-ER7" firstAttribute="top" secondItem="Cgl-yZ-cd2" secondAttribute="bottom" constant="49" id="xTt-Nz-WdG"/>
                             <constraint firstItem="HEH-YW-VSw" firstAttribute="centerX" secondItem="sWb-s6-GQZ" secondAttribute="centerX" id="xbf-B2-2KF"/>
+                            <constraint firstItem="V6Z-Ri-nGZ" firstAttribute="trailing" secondItem="2qe-GD-ER7" secondAttribute="trailing" id="yrp-uG-dQI"/>
                         </constraints>
                     </view>
                     <connections>
@@ -77,4 +93,7 @@
             <point key="canvasLocation" x="305" y="415"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="VMware_logo_gry.jpg" width="1216" height="426"/>
+    </resources>
 </document>

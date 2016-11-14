@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, XMLParserDelegate {
 
+    
+    
+    @IBOutlet weak var test: UISwitch!
+    
     // Setup variables
     var pickerData = [String]() // array holding the temp/pressure strings
     var parserT=XMLParser()
@@ -46,14 +50,16 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         let tempURL: URL = URL(string: baseURL+"&type=temperature")!
         parser = XMLParser(contentsOf: tempURL)!
         parser.delegate = self
-        var works = parser.parse()
+        //var works = parser.parse()
+        parser.parse() //test
         temperatureReadings = readings
         
         // Pressure - not used this time round
         let pressureURL: URL = URL(string: baseURL+"&type=pressure")!
         parser = XMLParser(contentsOf: pressureURL)!
         parser.delegate = self
-        works = parser.parse()
+        //works = parser.parse()
+        parser.parse()  //test
         pressureReadings = readings
         
         // PRINT IT for initial display
@@ -93,10 +99,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         //NSLog("failure error: %@", parseError)
     }
     // <END CODE FRAG>
-    
-    
-
-    
     
     
     
@@ -157,14 +159,16 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         let tempURL: URL = URL(string: baseURL+"&type=temperature")!
         parser = XMLParser(contentsOf: tempURL)!
         parser.delegate = self
-        var works = parser.parse()
+//        var works = parser.parse()
+        parser.parse()      //test
         temperatureReadings = readings
         
         // Pressure - not used this time round
         let pressureURL: URL = URL(string: baseURL+"&type=pressure")!
         parser = XMLParser(contentsOf: pressureURL)!
         parser.delegate = self
-        works = parser.parse()
+//        works = parser.parse()
+        parser.parse()  // test
         pressureReadings = readings
         
         // What does the picker say, and update as appropriate
