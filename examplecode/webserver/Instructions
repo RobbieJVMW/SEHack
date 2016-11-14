@@ -1,4 +1,0 @@
-SPIN UP DOCKER WITH PHP NGINX 
- docker run -v /Users/andrew/VMware/4.\ Training/Hackathon/webserver:/app -p 80:80 -d webdevops/php-nginx 
- 
- 
