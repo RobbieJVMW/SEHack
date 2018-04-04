@@ -8,3 +8,4 @@ Team 1 - Raspberry Pi Code <br>
 Team 2 - Code Platform Code <br>
 Team 3 - Mobile Team <br>
 
+Note that Team 3 - the mobile team assumes prior-knoweldege on basic Swift and XCode IDE usage.  
