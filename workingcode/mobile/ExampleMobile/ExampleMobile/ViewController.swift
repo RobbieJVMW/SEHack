@@ -43,7 +43,7 @@ class ViewController: UIViewController, XMLParserDelegate {
         let urlToSend: URL = URL(string: url)!
         parser = XMLParser(contentsOf: urlToSend)!
         parser.delegate = self
-        var works=parser.parse()
+        _=parser.parse()
         
         for (datevalue, tempvalue) in temperatureReadings {
             print("The reading was \(datevalue) = \(tempvalue)")
@@ -72,7 +72,7 @@ class ViewController: UIViewController, XMLParserDelegate {
         //        print ("End Element is \(elementName)")
     }
     func parser(_ parser: XMLParser, foundCharacters string: String) {
-        if(string.characters.count > 3)
+        if(string.count > 3)
         {
             if(currentElement == "type") { lasttype=string}
             if(currentElement == "date"){ lastdate=string}
