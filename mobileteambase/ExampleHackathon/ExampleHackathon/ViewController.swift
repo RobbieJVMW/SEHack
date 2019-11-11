@@ -62,7 +62,7 @@ class ViewController: UIViewController {
         //        print ("End Element is \(elementName)")
     }
     func parser(_ parser: XMLParser, foundCharacters string: String) {
-        if(string.characters.count > 3)
+        if(string.count>3)                  //Fix for Swift v5
         {
             if(currentElement == "type") { lasttype=string}
             if(currentElement == "date"){ lastdate=string}
